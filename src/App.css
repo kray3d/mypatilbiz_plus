@@ -67,9 +67,10 @@ h1, h2, p { margin-top: 0; }
 .quick-links a { display: flex; align-items: center; gap: 8px; color: #3c4b62; font-size: 9px; line-height: 1.25; font-weight: 600; white-space: nowrap; }
 .quick-links a:hover { color: #0869e8; }
 .quick-links svg { width: 30px; height: 30px; padding: 6px; border: 1px solid #c6d6e9; border-radius: 7px; color: #314864; background: #ffffffa8; flex: 0 0 auto; }
-.announcement { position: absolute; z-index: 3; top: 68px; right: clamp(85px, 13vw, 190px); width: 330px; min-height: 207px; padding: 17px 18px; display: flex; justify-content: space-between; gap: 8px; overflow: hidden; border: 1px solid #e3eaf1; border-radius: 9px; background: #ffffffed; box-shadow: 0 13px 36px #163a5a1f; isolation: isolate; }
-.announcement::before { content: ''; position: absolute; z-index: -2; inset: 0; background-image: var(--background-image); background-position: center; background-size: cover; opacity: .28; }
-.announcement::after { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, #fffffffa 0%, #ffffffeb 55%, #ffffff8f 100%); pointer-events: none; }
+.announcement { position: absolute; z-index: 3; top: 68px; right: clamp(85px, 13vw, 190px); width: 330px; min-height: 207px; padding: 17px 18px; display: flex; justify-content: space-between; gap: 8px; overflow: hidden; border: 1px solid #ffffffb8; border-radius: 16px; background: #ffffff72; box-shadow: 0 18px 42px #163a5a26, inset 0 1px 0 #ffffffc9; backdrop-filter: blur(18px) saturate(1.25); -webkit-backdrop-filter: blur(18px) saturate(1.25); isolation: isolate; }
+.announcement::before { content: ''; position: absolute; z-index: -2; inset: 0; background-image: var(--background-image); background-position: center; background-size: cover; opacity: .38; }
+.announcement::after { content: ''; position: absolute; z-index: -1; inset: 0; background: linear-gradient(120deg, #ffffffb8 0%, #ffffff66 48%, #d9ecff59 100%); pointer-events: none; }
+.announcement-copy, .council-mark { position: relative; z-index: 1; }
 .announcement-copy { max-width: 220px; }
 .new-tag { display: inline-flex; align-items: center; border-radius: 5px; background: #0b9c62; color: #fff; padding: 4px 8px; text-transform: uppercase; font-size: 8px; line-height: 1; font-weight: 800; letter-spacing: .6px; }
 .announcement h2 { max-width: 205px; margin: 7px 0 5px; font-size: 17px; line-height: 1.16; font-weight: 800; }
