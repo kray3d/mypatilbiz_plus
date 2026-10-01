@@ -1,4 +1,5 @@
 export const PBT_LIST = [
+  { type: 'MBIP', name: 'Iskandar Puteri', scene: 'puteri', logo: 'mbip.png' },
   { type: 'MD', name: 'Sabak Bernam', scene: 'puteri', logo: 'mdsb.png' },
   { type: 'MP', name: 'Ampang Jaya', scene: 'ampang', logo: 'mpaj.png' },
   { type: 'MD', name: 'Kampar', scene: 'kulai', logo: 'mdkampar.png' },
