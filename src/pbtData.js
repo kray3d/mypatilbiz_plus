@@ -19,6 +19,6 @@ export const PBT_LIST = [
   { type: 'MD', name: 'Selama', scene: 'puteri', logo: 'mdselama.png' },
 ].map((pbt) => ({
   ...pbt,
-  logo: `/logos/pbt/${pbt.logo}`,
-  background: `/images/pbt-backgrounds/${pbt.logo.replace(/\.png$/, '.jpg')}`,
+  logo: `${import.meta.env.BASE_URL}logos/pbt/${pbt.logo}`,
+  background: `${import.meta.env.BASE_URL}images/pbt-backgrounds/${pbt.logo.replace(/\.png$/, '.jpg')}`,
 }))

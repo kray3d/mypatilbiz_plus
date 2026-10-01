@@ -31,6 +31,8 @@ const councils = PBT_LIST.map((pbt) => ({
   scene: pbt.scene,
 }))
 
+const appBase = import.meta.env.BASE_URL
+
 const services = [
   { title: 'Urus Lesen', icon: FileCheck2, tone: 'blue' },
   { title: 'Pembaharuan Lesen', icon: Building2, tone: 'green' },
@@ -129,7 +131,7 @@ function App() {
               <p>Iskandar Puteri e-Lesen kini boleh diakses melalui myPATIL Biz. Urus lesen anda dengan lebih mudah.</p>
               <a href="#pbt" className="announcement-link">Urus Lesen Sekarang <ArrowRight size={15} /></a>
             </div>
-            <div className="council-mark" aria-label="Logo MBIP"><img src="/logos/pbt/mbip.png" alt="Logo MBIP" /></div>
+            <div className="council-mark" aria-label="Logo MBIP"><img src={`${appBase}logos/pbt/mbip.png`} alt="Logo MBIP" /></div>
           </aside>
 
           <div className="hero-controls" aria-label="Kawalan slaid">
@@ -143,7 +145,7 @@ function App() {
       <section className="content-section council-section" id="pbt">
         <div className="section-heading">
           <div><h2>Pilih PBT / Perkhidmatan Anda</h2><p>Akses terus ke sistem lesen dan perkhidmatan PBT di bawah myPATIL Biz.</p></div>
-          <a className="section-link" href="/pbt">Lihat semua PBT <ArrowRight size={15} /></a>
+          <a className="section-link" href={`${appBase}pbt`}>Lihat semua PBT <ArrowRight size={15} /></a>
         </div>
         <div className="council-wrap">
           <div className="council-rail" ref={councilRail}>

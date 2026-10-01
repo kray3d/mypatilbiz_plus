@@ -5,6 +5,8 @@ import './PbtDirectory.css'
 import { PBT_LIST } from './pbtData.js'
 import PbtLogo from './PbtLogo.jsx'
 
+const appBase = import.meta.env.BASE_URL
+
 function PbtSkyline() {
   return (
     <div className="skyline card-skyline" aria-hidden="true">
@@ -23,11 +25,11 @@ function PbtDirectory() {
   return (
     <main className="directory-page">
       <header className="directory-header">
-        <a className="brand" href="/" aria-label="myPATIL Biz, halaman utama">
+        <a className="brand" href={appBase} aria-label="myPATIL Biz, halaman utama">
           <span className="brand-name">myPATIL <b>Biz</b></span>
           <span className="brand-caption">BUSINESS · PBT · MALAYSIA</span>
         </a>
-        <a className="directory-home" href="/"><ArrowLeft size={16} /> Kembali ke Utama</a>
+        <a className="directory-home" href={appBase}><ArrowLeft size={16} /> Kembali ke Utama</a>
         <div className="directory-account-actions">
           <a className="button button-outline" href="https://bizpay.mypatil.my/login" target="_blank" rel="noopener noreferrer">Log Masuk</a>
           <a className="button button-primary" href="https://bizpay.mypatil.my/register" target="_blank" rel="noopener noreferrer">Daftar Akaun</a>
@@ -74,9 +76,9 @@ function PbtDirectory() {
       </section>
 
       <footer className="directory-footer">
-        <a className="brand footer-brand" href="/"><span className="brand-name">myPATIL <b>Biz</b></span><span className="brand-caption">BUSINESS · PBT · MALAYSIA</span></a>
+        <a className="brand footer-brand" href={appBase}><span className="brand-name">myPATIL <b>Biz</b></span><span className="brand-caption">BUSINESS · PBT · MALAYSIA</span></a>
         <span>Direktori PBT untuk usahawan Malaysia</span>
-        <a href="/">Kembali ke portal <ArrowRight size={14} /></a>
+        <a href={appBase}>Kembali ke portal <ArrowRight size={14} /></a>
       </footer>
     </main>
   )

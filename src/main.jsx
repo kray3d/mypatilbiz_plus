@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import PbtDirectory from './PbtDirectory.jsx'
 
-const currentPage = window.location.pathname.replace(/\/+$/, '') === '/pbt'
+const currentPage = window.location.pathname.replace(/\/+$/, '').endsWith('/pbt')
   ? PbtDirectory
   : App
 
