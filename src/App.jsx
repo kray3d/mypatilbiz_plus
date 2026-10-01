@@ -129,7 +129,7 @@ function App() {
               <span className="new-tag">Baharu</span>
               <h2>MBIP kini berada di myPATIL Biz</h2>
               <p>Iskandar Puteri e-Lesen kini boleh diakses melalui myPATIL Biz. Urus lesen anda dengan lebih mudah.</p>
-              <a href="#pbt" className="announcement-link">Urus Lesen Sekarang <ArrowRight size={15} /></a>
+              <a href="https://bizpay.mypatil.my" className="announcement-link" target="_blank" rel="noopener noreferrer">Urus Lesen Sekarang <ArrowRight size={15} /></a>
             </div>
             <div className="council-mark" aria-label="Logo MBIP"><img src={`${appBase}logos/pbt/mbip.png`} alt="Logo MBIP" /></div>
           </aside>
